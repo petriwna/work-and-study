@@ -8,6 +8,8 @@
   line-height: 150%;
   color: var(--secondary);
   text-wrap: nowrap;
+  height: 70px;
+  width: 70px;
 
   @media screen and (min-width: $bp-tablet) {
     font-size: 18px;

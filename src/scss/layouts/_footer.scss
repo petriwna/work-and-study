@@ -13,7 +13,7 @@
       height: 1px;
       width: 100%;
       display: flex;
-      margin-bottom: 10px;
+      margin-bottom: 38px;
     }
   }
 
@@ -48,5 +48,31 @@
 
   &__copyright {
     margin: 0;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet){
+      justify-content: space-around;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 38px;
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-tablet){
+      flex-direction: row;
+    }
   }
 }
