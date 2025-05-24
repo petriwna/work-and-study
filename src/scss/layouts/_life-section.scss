@@ -1,23 +1,13 @@
 .life-section {
 
   &__list {
-    padding: 40px 0;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    grid-column-gap: 0;
-    grid-row-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
 
-    @media screen and (min-width: $bp-tablet) {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(3, 1fr);
-      grid-column-gap: 20px;
-      grid-row-gap: 20px;
-    }
-
-    @media screen and (min-width: $bp-desktop) {
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 1fr);
+  &__item {
+    &:nth-child(odd) {
+      background-color: var(--secondary-light);
     }
   }
 }
