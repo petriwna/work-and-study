@@ -1,0 +1,23 @@
+.career-card {
+  height: 100%;
+  border: 1.87px solid #dedfe3;
+  border-radius: 13px;
+  box-shadow: 0 10px 21px 0 rgba(117, 117, 117, 0.1), 0 38px 38px 0 rgba(117, 117, 117, 0.09), 0 86px 52px 0 rgba(117, 117, 117, 0.05), 0 153px 61px 0 rgba(117, 117, 117, 0.01), 0 239px 67px 0 rgba(117, 117, 117, 0);
+  padding: 22px;
+  font-size: 16px;
+
+  &__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 160%;
+    color: var(--color-text-primary);
+    margin-bottom: 8px;
+  }
+
+  &__image {
+    border-radius: 18px;
+    margin-bottom: 22px;
+    width: 223px;
+    height: 149px;
+  }
+}

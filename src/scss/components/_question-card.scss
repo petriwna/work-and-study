@@ -2,8 +2,7 @@
   border-radius: 10px;
   padding: 20px 24px;
   transition: 0.3s ease-in-out;
-  border: 1px solid var(--color-brand-light);
-  background-color: var(--secondary-grey);
+  background-color: var(--secondary-light);
   height: fit-content;
 }
 
@@ -34,7 +33,7 @@ details summary {
   font-size: 20px;
   line-height: 160%;
   list-style: none;
-  color: var(--color-secondary);
+  color: var(--color-text-primary);
   justify-content: space-between;
 }
 

@@ -1,25 +1,16 @@
 .subscribe-section {
-  padding-top: 4rem;
   text-align: center;
   background-color: var(--secondary);
+  background-image: url('../../public/images/subscribe-decor.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
   position: relative;
-  margin-top: 0;
-
-  @media screen and (min-width: $bp-min-desktop) {
-    margin-top: 6rem;
-  }
 
   &__container {
     display: flex;
     flex-direction: column;
-  }
-
-  &__content {
-    width: 100%;
-
-    @media screen and (min-width: $bp-min-desktop) {
-      width: 50%;
-    }
+    justify-content: center;
+    align-items: center;
   }
 
   &__title {
@@ -32,29 +23,6 @@
 
   &__form {
     margin-bottom: 4rem;
-  }
-
-  &__image {
-    position: relative;
-    width: 100%;
-    background-image: url("./../../public/images/subscribe.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 413px;
-
-    @media screen and (min-width: $bp-min-desktop) {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      width: 50%;
-    }
-  }
-
-  &__link {
-    color: var(--secondary);
-
-    &:hover {
-      color: var(--color-primary);
-    }
+    width: 80%;
   }
 }

@@ -1,39 +1,6 @@
 .costs-section {
-  &__container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
 
-    @media screen and (min-width: $bp-tablet) {
-      flex-direction: row;
-      gap: 60px;
-    }
-  }
-
-  &__item {
-    margin-bottom: 10px;
-    padding-left: 1.25rem;
-    position: relative;
-
-    &::before {
-      content: "•";
-      padding-top: 6px;
-      position: absolute;
-      left: 0;
-      color: var(--secondary);
-      font-size: 1.2rem;
-      line-height: 1;
-    }
-  }
-
-  &__img {
-    width: 70%;
-    object-fit: contain;
-    transform: scaleX(-1);
-
-    @media screen and (min-width: $bp-tablet) {
-      width: 50%;
-    }
+  &__content {
+    padding: 0 56px;
   }
 }

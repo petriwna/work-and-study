@@ -1,31 +1,9 @@
 .career-section {
+  background-color: var(--secondary-light);
 
-  &__container {
-    display: flex;
-    flex-direction: column-reverse;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
-    align-items: center;
-
-    @media screen and (min-width: $bp-tablet) {
-      flex-direction: row;
-      gap: 60px;
-    }
-  }
-
-  &__content {
-    text-align: center;
-
-    @media screen and (min-width: $bp-tablet) {
-      text-align: left;
-    }
-  }
-
-  &__img {
-    width: 70%;
-    object-fit: contain;
-
-    @media screen and (min-width: $bp-tablet) {
-      width: 50%;
-    }
   }
 }
