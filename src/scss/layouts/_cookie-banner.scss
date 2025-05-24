@@ -1,0 +1,21 @@
+.cookie-banner {
+  position: fixed;
+  bottom: 30px;
+  width: 60%;
+  left: 20%;
+  background-color: rgba(237, 239, 241, 0.76);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04);
+  color: var(--color-secondary);
+  padding: 1rem 2rem;
+  z-index: 1000;
+  font-size: 0.95rem;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media screen and (min-width: $bp-tablet) {
+    flex-direction: row;
+    align-items: center;
+  }
+}

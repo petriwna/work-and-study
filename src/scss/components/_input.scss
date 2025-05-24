@@ -1,0 +1,42 @@
+.input {
+  position: relative;
+  display: flex;
+  border-radius: 13px;
+  background-color: var(--primary);
+  padding: 6px 30px;
+
+  &__label {
+    position: absolute;
+    top: 16px;
+    left: 42px;
+  }
+
+  &__control {
+    padding: 8px 24px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.17;
+    border-radius: 8px;
+    background-color: transparent;
+    border: none;
+
+    &:focus {
+      border-color: var(--color-brand-normal);
+      outline: none;
+    }
+
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.4);
+      font-size: 16px;
+      line-height: 1.17;
+    }
+
+    &:focus::placeholder {
+      color: var(--color-primary-dark);
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      padding: 16px 42px;
+    }
+  }
+}

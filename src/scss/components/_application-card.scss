@@ -1,0 +1,22 @@
+.application-card {
+  display: flex;
+  gap: 8px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__icon {
+    fill: var(--secondary);
+  }
+
+  &__text {
+    opacity: .8;
+  }
+}

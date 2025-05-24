@@ -1,0 +1,23 @@
+:root {
+  --primary: #f5f9fe;
+  --secondary: #0393e5;
+  --secondary-light: #f5f9fe;
+  --secondary-orange: #ffb900;
+
+  --color-accent: #0bd0d0;
+  --color-accent-dark: #041ca7;
+
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-text-second: #536288;
+  --color-text-primary: #0f2f64;
+  --color-text-primary-light: #1e5dbc;
+
+  --font-family: "Inter", sans-serif;
+  --second-family: "Poppins", sans-serif;
+}
+
+$bp-mobile: 480px;
+$bp-tablet: 768px;
+$bp-min-desktop: 992px;
+$bp-desktop: 1280px;

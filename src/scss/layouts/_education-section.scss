@@ -1,0 +1,36 @@
+.education-section {
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 60px;
+    }
+  }
+
+  &__content {
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      text-align: left;
+    }
+  }
+
+  &__text {
+    opacity: .8;
+  }
+
+  &__img {
+    width: 70%;
+    object-fit: contain;
+    transform: scaleX(-1);
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 50%;
+    }
+  }
+}

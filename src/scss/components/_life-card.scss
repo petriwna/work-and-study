@@ -1,0 +1,19 @@
+.life-card {
+  padding: 30px 65px;
+  box-shadow: 0 10px 60px 0 rgba(38, 45, 118, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px;
+  height: 100%;
+  background-color: var(--primary);
+  text-align: center;
+
+  &__icon {
+    fill: var(--secondary);
+  }
+
+  &__text {
+    opacity: .8;
+  }
+}

@@ -1,0 +1,31 @@
+.section {
+  padding: 20px 0;
+
+  @media screen and (min-width: $bp-tablet){
+    padding: 48px 0;
+  }
+
+  &__title {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 133%;
+    color: var(--color-text-primary);
+
+    @media screen and (min-width: $bp-tablet){
+      font-size: 48px;
+    }
+
+    &--centered {
+      text-align: center;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 163%;
+    text-align: center;
+    opacity: .8;
+  }
+}

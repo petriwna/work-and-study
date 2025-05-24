@@ -1,0 +1,83 @@
+.hero-section {
+  padding-top: 124px;
+  position: relative;
+  background-color: var(--primary);
+  overflow: hidden;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding-top: 150px;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 165px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 60px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  &__title {
+    position: relative;
+    font-family: var(--second-family);
+    color: var(--color-accent);
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 96%;
+    letter-spacing: -0.03em;
+    margin: 0;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+  }
+
+  &__bottom {
+    &::before{
+      content: '';
+      border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+      display: block;
+      height: 1px;
+      width: 100%;
+      margin-bottom: 14px;
+    }
+  }
+
+  &__bottom-text {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--secondary);
+  }
+
+  &__button {
+    margin-left: 0;
+    width: fit-content;
+    text-wrap: nowrap;
+  }
+
+  &__img {
+    width: 70%;
+    object-fit: contain;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 50%;
+    }
+  }
+}

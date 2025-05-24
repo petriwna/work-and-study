@@ -1,0 +1,40 @@
+.logo {
+  gap: 5px;
+  align-items: center;
+  display: flex;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 150%;
+  color: var(--secondary);
+  text-wrap: nowrap;
+
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    font-size: 34px;
+  }
+
+  &__link {
+    color: var(--secondary);
+
+    &:hover {
+      color: var(--secondary);
+    }
+
+    &--footer {
+      color: var(--primary);
+
+      &:hover {
+        color: var(--primary);
+      }
+    }
+  }
+
+  &__img {
+    //object-fit: contain;
+    height: 50px;
+  }
+}

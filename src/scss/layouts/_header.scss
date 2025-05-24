@@ -1,0 +1,66 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 16px;
+  font-weight: 500;
+  z-index: 2;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 32px;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 40px;
+  }
+
+  &__menu {
+    display: none;
+    text-wrap: nowrap;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160%;
+
+    @media screen and (min-width: $bp-min-desktop) {
+      display: flex;
+      gap: 16px;
+      flex-grow: 1;
+      justify-content: flex-end;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      gap: 24px;
+    }
+  }
+
+  &__button {
+    display: none;
+
+    @media screen and (min-width: $bp-min-desktop) {
+      display: block;
+    }
+  }
+
+  &__burger {
+    background-color: transparent;
+    border: none;
+    height: 24px;
+    width: 24px;
+    padding: 0;
+    fill: var(--color-primary);
+
+    @media screen and (min-width: $bp-min-desktop) {
+      display: none;
+    }
+  }
+}

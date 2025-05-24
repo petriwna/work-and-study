@@ -1,0 +1,31 @@
+@import 'utils/fonts';
+@import 'utils/variable';
+@import 'utils/utils';
+
+@import './base';
+
+@import 'components/application-card';
+@import 'components/buttons';
+@import 'components/car';
+@import 'components/links';
+@import 'components/input';
+@import 'components/life-card';
+@import 'components/logo';
+@import 'components/policy';
+@import 'components/question-card';
+
+@import 'layouts/application-section';
+@import 'layouts/subscribe-section';
+@import 'layouts/container';
+@import 'layouts/cookie-banner';
+@import 'layouts/costs-section';
+@import 'layouts/education-section';
+@import 'layouts/career-section';
+@import 'layouts/faq-section';
+@import 'layouts/footer';
+@import 'layouts/header';
+@import 'layouts/hero-section';
+@import 'layouts/life-section';
+@import 'layouts/mobile-menu';
+@import 'layouts/section';
+@import 'layouts/thank-you';
