@@ -1,36 +1,44 @@
 .education-section {
+  background-image: url('../../public/images/education-decor.png');
+  background-repeat: no-repeat;
+  background-position: center;
 
   &__container {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    align-items: center;
 
     @media screen and (min-width: $bp-tablet) {
       flex-direction: row;
-      gap: 60px;
+    }
+  }
+
+  &__title {
+    width: 100%;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 40%;
     }
   }
 
   &__content {
+    width: 100%;
     text-align: center;
 
     @media screen and (min-width: $bp-tablet) {
       text-align: left;
+      width: 60%;
     }
   }
 
-  &__text {
-    opacity: .8;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
-  &__img {
-    width: 70%;
-    object-fit: contain;
-    transform: scaleX(-1);
-
-    @media screen and (min-width: $bp-tablet) {
-      width: 50%;
+  &__item {
+    &:nth-child(even) {
+      background-color: var(--secondary-light);
     }
   }
 }

@@ -1,16 +1,15 @@
 .section {
-  padding: 20px 0;
+  padding: 59px 0;
 
   @media screen and (min-width: $bp-tablet){
     padding: 48px 0;
   }
 
   &__title {
-    font-family: var(--second-family);
-    font-weight: 700;
-    font-size: 34px;
-    line-height: 133%;
     color: var(--color-text-primary);
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 120%;
 
     @media screen and (min-width: $bp-tablet){
       font-size: 48px;
