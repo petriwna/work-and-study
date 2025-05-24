@@ -1,38 +1,43 @@
 .application-section {
-  &__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 20px;
+  background-color: var(--secondary-light);
+  position: relative;
 
-    @media screen and (min-width: $bp-tablet) {
-      flex-direction: row;
-      gap: 60px;
-    }
+  &:before {
+    display: block;
+    content: "";
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../../public/images/apl-top-decor.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 180px;
   }
 
-  &__content {
-    width: 100%;
+  &:after {
+    display: block;
+    content: "";
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: url("../../public/images/apl-bottom-decor.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+  }
 
-    @media screen and (min-width: $bp-tablet) {
-      width: 50%;
-    }
+  &__container {
+    position: relative;
+    z-index: 1;
   }
 
   &__list {
-    width: 100%;
-
-    @media screen and (min-width: $bp-tablet) {
-      width: 50%;
-    }
-  }
-
-  &__img {
-    object-fit: contain;
-    display: none;
-
-    @media screen and (min-width: $bp-tablet) {
-      display: block;
-    }
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
   }
 }
